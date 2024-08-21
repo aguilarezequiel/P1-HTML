@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+        }
+        h2, h3, h4, h5, h6 {
+            color: #555;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .media-container {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: whitesmoke;">Desarrollo de Software</h1>
+    </header>
+    <div class="container">
+        <!-- Ejercicio 1 - Estructura Básica del Documento HTML-->
+        <section>
+            <h1>1. Estructura Básica del Documento HTML</h1>
+            <p>Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiqueta de metadatos y un título.</p>
+        </section>
+
+        <!-- Ejercicio 2 - Encabezados y Propiedades del Texto-->
+        <section>
+            <h1>2. Encabezados y Propiedades del Texto</h1>
+            <h2 style="font-weight: bold;">Esto es un encabezado H2 con letra negrita</h2>
+            <h3 style="font-style: italic;">Esto es un encabezado H3 con letra cursiva</h3>
+            <h4 style="text-decoration: underline;">Esto es un encabezado H4 con letra subrayada</h4>
+            <h5>Esto es un encabezado H5</h5>
+            <h6>Esto es un encabezado H6</h6>
+        </section>
+
+        <!-- Ejercicio 3 - Divisiones y Agrupación del Contenido -->
+        <section>
+            <h1>3. Divisiones y Agrupación del Contenido</h1>
+            <article>
+                <h2>Sección 1</h2>
+                <p>Contenido de la primera sección agrupada por un div</p>
+            </article>
+
+            <article>
+                <h2>Sección 2</h2>
+                <p>Contenido de la segunda sección agrupada por un div</p>
+            </article>
+        </section>
+
+        <!-- Ejercicio 4 - Enlaces y Listas -->
+        <section>
+            <h1>4. Enlaces y Listas</h1>
+            <p>Visita nuestro <a href="https://google.com">sitio web</a> para más información.</p>
+            <p>Enlaces internos:</p>
+            <ul>
+                <li><a href="estructura.html">Ir a Estructura</a></li>
+                <li><a href="multimedia.html">Ir a Multimedia</a></li>
+                <li><a href="formulario.html">Ir a Formulario</a></li>
+            </ul>
+            <p>Lista Desordenada</p>
+            <ul>
+                <li>Primer Elemento Desordenado</li>
+                <li>Segundo Elemento Desordenado</li>
+                <li>Tercer Elemento Desordenado</li>
+            </ul>
+            <p>Lista Ordenada</p>
+            <ol>
+                <li>Primer Elemento Ordenado</li>
+                <li>Segundo Elemento Ordenado</li>
+                <li>Tercer Elemento Ordenado</li>
+            </ol>
+        </section>
+
+        <!-- Ejercicio 5 - Elementos Multimedia -->
+        <section>
+            <h1>5. Elementos Multimedia</h1>
+            <div class="media-container">
+                <p>Imagen</p>
+                <img src="pinkfloydimg.jpg" alt="Descripción de la imagen" />
+            </div>
+
+            <div class="media-container">
+                <p>Video</p>
+                <video controls>
+                    <source src="pinkfloydmp4.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+
+            <div class="media-container">
+                <p>Audio</p>
+                <audio controls autoplay src="pinkfloydmp3.mp3"></audio>
+            </div>
+        </section>
+
+        <!-- Ejercicio 6 - Tablas -->
+        <section>
+            <h1>6. Tablas</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Ejercicio 7 - Formularios -->
+        <section>
+            <h1>7. Formularios</h1>
+            <form action="#">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
